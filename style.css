@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background-color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  color: white;
+  margin: 0 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+nav ul li a {
+  border-radius: 30px;
+  padding: 10px;
+}
+nav ul li a:hover {
+  background-color: rgb(83, 83, 83);
+  transition: 300ms all;
+}
+.left_nav,
+.right_nav {
+  display: flex;
+  align-items: center;
+}
+.menu_btn {
+  margin-left: 10px;
+  display: none;
+}
+.sign a {
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+  color: black;
+}
+.sign a:hover {
+  background-color: #eeee;
+  transition: ease 500ms;
+}
+nav ul li {
+  padding: 15px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.uber {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.earner {
+  background: url(./assets/earner.jpeg) no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.container_landing {
+  position: absolute;
+  left: 200px;
+  height: 70vh;
+  min-height: 500px;
+  width: 38vw;
+  background-color: white;
+}
+.landing_top {
+  border-bottom: 1px solid #eeee;
+  display: flex;
+  justify-content: space-around;
+}
+.drive,
+.eat,
+.ride {
+  padding: 28px 12px 20px 12px;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+.drive {
+  border-bottom: 4px solid black;
+}
+.landing_bottom {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.landing_bottom_h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.landing_bottom_a {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.landing_bottom_a2 {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.landing_bottom_a2 a {
+  color: black;
+}
+
+.a2_hover {
+  display: inline-block;
+  position: relative;
+  color: #eeee;
+}
+
+.a2_hover:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  transition: 300ms all;
+  opacity: 0;
+}
+
+.a2_hover:hover:after {
+  opacity: 1;
+}
+
+.nyc {
+  background: url(./assets/nyc.png) no-repeat center;
+  background-size: 100% 100%;
+  height: 300px;
+  width: 100%;
+}
+
+.nyc_content {
+  height: 250px;
+  margin: auto 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.nyc_content_h2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nyc_content_a {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upper_sc {
+  height: 100%;
+  width: 100%;
+  padding: 64px 64px 64px 200px;
+}
+.container_sc {
+  display: flex;
+  column-gap: 80px;
+}
+.container_sc a {
+  color: black;
+}
+.sc_header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 00;
+}
+.container_safety {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35vw;
+  row-gap: 15px;
+}
+.safety_img {
+  background: url(./assets/Safety.jpeg) no-repeat;
+  height: 50vh;
+  width: 38vw;
+}
+.container_city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35vw;
+  row-gap: 15px;
+}
+.city_img {
+  background: url(./assets/Cities.jpeg) no-repeat;
+  height: 50vh;
+  width: 38vw;
+}
+
+.footer {
+  background: black;
+  padding: 100px;
+  color: white;
+}
+.footer_list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 10rem;
+  line-height: 2.5;
+}
+.footer_list ul {
+  color: white;
+  list-style-type: none;
+}
+
+.footer_uber a {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 1.5rem;
+}
+.footer_uber,
+.footer_help {
+  margin-bottom: 2rem;
+}
+.footer_bottom ul {
+  margin-top: 3rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 3.5rem;
+  row-gap: 1rem;
+}
+.footer_bottom ul li {
+  cursor: pointer;
+}
+.check_btn {
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 10px;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 1110px) {
+  .container_sc {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  nav ul {
+    display: none;
+  }
+  .check_btn {
+    display: block;
+  }
+}
+@media (max-width: 680px) {
+  .container_landing {
+    width: 400px;
+    height: 50vh;
+    position: static;
+    margin: 0 auto;
+  }
+  .earner {
+    background: none;
+    height: 80vh;
+  }
+  .mobile_bg {
+    height: 60vh;
+    width: 100%;
+    background: url(./assets/Earner_Home_bg_mobile.jpeg) center;
+  }
+  .nyc {
+    background: url(./assets/nyc-mobile.png) no-repeat center;
+    background-size: 100% 100%;
+    height: 300px;
+    width: 100%;
+  }
+  .safety_img {
+    background: url(./assets/Safety_mobile.jpeg) no-repeat;
+    height: 30vh;
+    width: 40vw;
+  }
+  .city_img {
+    background: url(./assets/cities_mobile.jpeg) no-repeat;
+    height: 30vh;
+    width: 40vw;
+  }
+  .sc_header h2 {
+    font-size: 1.5rem;
+  }
+  .safety_a {
+    display: flex;
+    flex-direction: column;
+  }
+}
