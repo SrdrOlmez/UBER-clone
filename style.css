@@ -1,61 +1,129 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
 header {
+  height: 70px;
+  width: 100%;
   background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  font-size: 1rem;
 }
+.uber {
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  color: white;
-  margin: 0 100px;
 }
 
 nav ul {
   display: flex;
-  list-style-type: none;
-  align-items: center;
+  list-style: none;
 }
-nav ul li a {
-  border-radius: 30px;
+:not(li) > ul > li {
   padding: 10px;
+  margin: auto 5px;
+  border-radius: 20px;
 }
-nav ul li a:hover {
-  background-color: rgb(83, 83, 83);
-  transition: 300ms all;
+:not(li) > ul > li:hover {
+  background-color: rgb(63, 63, 63);
+  transition: 400ms all;
 }
-.left_nav,
-.right_nav {
-  display: flex;
-  align-items: center;
+li li {
+  line-height: 1.5;
+  cursor: pointer;
 }
-.menu_btn {
-  margin-left: 10px;
-  display: none;
-}
-.sign a {
+.sign_button {
   background-color: white;
-  padding: 10px;
-  border-radius: 30px;
+  border-radius: 20px;
   color: black;
+  cursor: pointer;
 }
-.sign a:hover {
-  background-color: #eeee;
-  transition: ease 500ms;
+.sign_button:hover {
+  background-color: rgb(218, 218, 218);
+  transition: 400ms all;
 }
-nav ul li {
-  padding: 15px;
-}
-a {
+
+nav ul li a {
   text-decoration: none;
   color: white;
 }
 
+nav ul li ul {
+  display: none;
+  padding: 0;
+  width: 180px;
+}
+.company-drop {
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.16);
+}
+.company-drop li {
+  padding: 5px 10px;
+  color: gray;
+}
+.company-drop li:hover {
+  background-color: rgb(241, 241, 241);
+  color: black;
+}
+.products-drop {
+  height: 260px;
+  width: 250px;
+  overflow: scroll;
+  box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.16);
+}
+.products-drop li {
+  padding: 5px 10px;
+  color: gray;
+  font-size: 1.3rem;
+}
+.products-drop li:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.products-drop li svg {
+  margin: 0 10px;
+}
+
+.checkbox_company:checked + .company-drop {
+  display: block;
+  position: absolute;
+  top: 70px;
+  background-color: white;
+  z-index: 1;
+}
+
+.checkbox_company,
+.checkbox_products {
+  display: none;
+}
+.checkbox_products:checked + .products-drop {
+  display: block;
+  position: absolute;
+  top: 70px;
+  right: 285px;
+  background-color: white;
+  z-index: 1;
+}
+label {
+  cursor: pointer;
+}
+.nav-svg {
+  margin-right: 10px;
+}
+.nav2 {
+  display: none;
+}
 .uber {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 500;
@@ -63,20 +131,26 @@ a {
 }
 .earner {
   background: url(./assets/earner.jpeg) no-repeat;
-  background-size: 100% 100%;
-  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
 }
+.earner a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 .container_landing {
   position: absolute;
   left: 200px;
-  height: 70vh;
+  height: 50vh;
   min-height: 500px;
-  width: 38vw;
+  min-width: 500px;
+  width: 30vw;
   background-color: white;
 }
 .landing_top {
@@ -96,10 +170,12 @@ a {
   border-bottom: 4px solid black;
 }
 .landing_bottom {
-  padding: 40px;
+  padding: 40px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  row-gap: 15px;
+  min-width: 450px;
 }
 .landing_bottom_h2 {
   font-size: 2rem;
@@ -108,7 +184,6 @@ a {
 }
 .landing_bottom_a {
   background-color: black;
-  color: white;
   height: 50px;
   width: 160px;
   display: flex;
@@ -116,6 +191,11 @@ a {
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+.landing_bottom_a:hover {
+  cursor: pointer;
+  background-color: rgb(36, 36, 36);
+  transition: 300ms all;
 }
 .landing_bottom_a2 {
   height: 40px;
@@ -155,6 +235,10 @@ a {
   height: 300px;
   width: 100%;
 }
+.nyc a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 
 .nyc_content {
   height: 250px;
@@ -171,12 +255,16 @@ a {
 
 .nyc_content_a {
   background-color: black;
-  color: white;
   height: 50px;
   width: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.nyc_content_a:hover {
+  cursor: pointer;
+  background-color: rgb(36, 36, 36);
+  transition: 300ms all;
 }
 .upper_sc {
   height: 100%;
@@ -185,15 +273,15 @@ a {
 }
 .container_sc {
   display: flex;
-  column-gap: 80px;
+  column-gap: 50px;
 }
 .container_sc a {
   color: black;
+  text-decoration: none;
 }
 .sc_header {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
-  font-weight: 00;
 }
 .container_safety {
   display: flex;
@@ -205,8 +293,14 @@ a {
 .safety_img {
   background: url(./assets/Safety.jpeg) no-repeat;
   height: 50vh;
-  width: 38vw;
+  width: 35vw;
 }
+.safety_a {
+  margin-top: 2rem;
+  display: flex;
+  column-gap: 25px;
+}
+
 .container_city {
   display: flex;
   flex-direction: column;
@@ -217,12 +311,19 @@ a {
 .city_img {
   background: url(./assets/Cities.jpeg) no-repeat;
   height: 50vh;
-  width: 38vw;
+  width: 35vw;
+}
+.city_a {
+  margin-top: 2rem;
 }
 
 .footer {
   background: black;
   padding: 100px;
+  color: white;
+}
+.footer a {
+  text-decoration: none;
   color: white;
 }
 .footer_list {
@@ -235,8 +336,21 @@ a {
 .footer_list ul {
   color: white;
   list-style-type: none;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
-
+.footer_list ul li {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.footer_list ul:hover {
+  background-color: black;
+}
+.footer_list ul li:hover {
+  background-color: black;
+}
 .footer_uber a {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 1.5rem;
@@ -257,6 +371,9 @@ a {
 .footer_bottom ul li {
   cursor: pointer;
 }
+.footer ul li a:hover {
+  color: rgb(156, 156, 156);
+}
 .check_btn {
   font-size: 1.3rem;
   cursor: pointer;
@@ -266,57 +383,210 @@ a {
 #check {
   display: none;
 }
-@media (max-width: 1110px) {
-  .container_sc {
-    flex-direction: column;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  nav ul {
+
+@media (max-width: 1100px) {
+  .nav1 {
     display: none;
   }
-  .check_btn {
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .nav2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav2-right {
+    display: flex;
+  }
+  .sign_button {
+    padding: 10px 20px;
+  }
+  .nav2 i {
+    padding: 10px 20px;
+  }
+  .nav2 input {
+    display: none;
+  }
+  .nav2-menu {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  #menu-toggle:checked + .nav2-menu {
     display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    z-index: 1;
   }
-}
-@media (max-width: 680px) {
-  .container_landing {
-    width: 400px;
-    height: 50vh;
-    position: static;
-    margin: 0 auto;
+  ul li {
+    background-color: white;
   }
+  :not(li) > ul > li {
+    padding: 10px;
+    margin: auto;
+    border-radius: 0;
+  }
+  :not(li) > ul > li:hover {
+    background-color: white;
+    border-radius: 0;
+  }
+  .nav2-products {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(224, 224, 224);
+  }
+  .nav2_checkbox_company:checked + .nav2_company-drop {
+    display: block;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    color: grey;
+    font-size: 1.8rem;
+  }
+  .nav2_checkbox_products:checked + .nav2_products-drop {
+    display: block;
+    width: 250px;
+    left: 40px;
+    text-align: left;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    min-width: fit-content;
+    color: rgb(56, 56, 56);
+    font-size: 2rem;
+  }
+
   .earner {
     background: none;
-    height: 80vh;
+    height: 500px;
+  }
+  .container_landing {
+    width: 100%;
+    left: 0;
+    top: 0;
   }
   .mobile_bg {
     height: 60vh;
     width: 100%;
-    background: url(./assets/Earner_Home_bg_mobile.jpeg) center;
+    background: url(./assets/earner2.jpeg) center;
+  }
+  .nyc_content {
+    margin: 0;
+    padding: 40px;
+  }
+  .upper_sc {
+    padding: 40px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  .container_sc {
+    column-gap: 10px;
+  }
+  .safety_img {
+    width: 45vw;
+    height: 40vh;
+  }
+  .container_city {
+    row-gap: 27px;
+  }
+  .city_img {
+    width: 45vw;
+    height: 40vh;
+  }
+
+  footer li {
+    background-color: black;
+  }
+  .container_city,
+  .container_safety {
+    width: 50vw;
+  }
+  .footer {
+    padding: 40px 100px 40px 40px;
+  }
+  .footer_list {
+    column-gap: 1rem;
+    justify-content: space-between;
+  }
+  .footer_bottom ul {
+    justify-content: space-between;
+    column-gap: 1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .earner {
+    background: none;
+  }
+
+  .mobile_bg {
+    height: 60vh;
+    width: 100%;
+    background: url(./assets/Earner_Home_bg_mobile.jpeg) no-repeat center;
   }
   .nyc {
     background: url(./assets/nyc-mobile.png) no-repeat center;
     background-size: 100% 100%;
-    height: 300px;
+    height: 280px;
     width: 100%;
   }
-  .safety_img {
-    background: url(./assets/Safety_mobile.jpeg) no-repeat;
-    height: 30vh;
-    width: 40vw;
+  .nyc_content {
+    margin: 0;
+    padding-left: 40px;
   }
-  .city_img {
-    background: url(./assets/cities_mobile.jpeg) no-repeat;
-    height: 30vh;
-    width: 40vw;
+  .container_sc {
+    flex-direction: column;
   }
+  .upper_sc {
+    padding: 40px;
+  }
+
   .sc_header h2 {
     font-size: 1.5rem;
   }
   .safety_a {
     display: flex;
     flex-direction: column;
+  }
+  .safety_img {
+    width: 80vw;
+    height: 35vh;
+  }
+  .city_img {
+    width: 80vw;
+    height: 35vh;
+  }
+  .container_city,
+  .container_safety {
+    width: 80vw;
+  }
+  .footer {
+    padding: 40px;
+  }
+  .footer_list {
+    column-gap: 2rem;
+  }
+  .footer_bottom ul {
+    justify-content: space-between;
+    column-gap: 1rem;
+  }
+}
+@media (max-width: 1250px) {
+  .landing_bottom h2 {
+    font-size: 2rem;
   }
 }

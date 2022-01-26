@@ -4,35 +4,105 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Earn Money by Driving or Get a Ride Now | Uber</title>
+  <link rel="icon" href="./assets/eab81984bdf581b48c1876ae7a003c33.ico">
+  <title>Earn Money by Driving or Get a Ride Now</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="left_nav">
-        <div class="uber">Uber</div>
-        <ul>
-          <li><a href="" class="none">Company<i class="fas fa-angle-down fa-fw"></i></a></li>
-          <li><a href="" class="none">Safety</a></li>
-          <li><a href="" class="none">Help</a></li>
-          <li><a href="" class="none">COVID-19 </a></li>
+  <header>   
+    <div class="uber">Uber</div>
+    <nav class="nav1">
+        <ul class="left">
+          <li class="company"><label for="company_checkbox">Company <i class="fa-solid fa-angle-down fa-fw" id="company_s"></i></label>
+          <input class="checkbox_company" type="checkbox" name="" id="company_checkbox">
+            <ul class="company-drop">
+                <li>About Us</li>
+                <li>Our offerings</li>
+                <li>How Uber works</li>
+                <li>Global citizenship</li>
+                <li>Newsroom</li>
+                <li>Investor relations</li>
+                <li>Blog</li>
+                <li>Careers</li>
+            </ul>
+          </li>
+          <li><a href="#">Safety</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Covid-19 resources</a></li>
         </ul>
-      </div>
-      <div class="right_nav">
-        <ul>
-          <li class="none"><a href=""><i class="fas fa-globe fa-fw"></i>En</a></li>
-          <li class="none"><a href=""><i class="fas fa-th fa-fw"></i>Products</a></li>
-          <li class="none"><a href=""><i class="far fa-user fa-fw"></i>Log in</a></li>
+        <ul class="right">
+          <li>
+            <a href="#">
+              <svg class="nav-svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5zM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1zm1.9-6.1l-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4zM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12zm3.5 6.6l1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4z" fill="currentColor"></path></svg>
+              EN
+            </a>
+          </li>
+          <li><label for="products_checkbox"><svg  class="nav-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.66671 3C0.930328 3 0.333374 2.40305 0.333374 1.66667C0.333374 0.930286 0.930328 0.333333 1.66671 0.333333C2.40309 0.333333 3.00004 0.930287 3.00004 1.66667C3.00004 2.40305 2.40309 3 1.66671 3ZM7.00004 3C6.26366 3 5.66671 2.40305 5.66671 1.66667C5.66671 0.930287 6.26366 0.333333 7.00004 0.333333C7.73642 0.333333 8.33337 0.930287 8.33337 1.66667C8.33337 2.40305 7.73642 3 7.00004 3ZM12.3334 3C11.597 3 11 2.40305 11 1.66667C11 0.930287 11.597 0.333333 12.3334 0.333333C13.0698 0.333333 13.6667 0.930287 13.6667 1.66667C13.6667 2.40305 13.0698 3 12.3334 3ZM1.66671 8.33333C0.930328 8.33333 0.333374 7.73638 0.333374 7C0.333374 6.26362 0.930328 5.66667 1.66671 5.66667C2.40309 5.66667 3.00004 6.26362 3.00004 7C3.00004 7.73638 2.40309 8.33333 1.66671 8.33333ZM7.00004 8.33333C6.26366 8.33333 5.66671 7.73638 5.66671 7C5.66671 6.26362 6.26366 5.66667 7.00004 5.66667C7.73642 5.66667 8.33337 6.26362 8.33337 7C8.33337 7.73638 7.73642 8.33333 7.00004 8.33333ZM12.3334 8.33333C11.597 8.33333 11 7.73638 11 7C11 6.26362 11.597 5.66667 12.3334 5.66667C13.0698 5.66667 13.6667 6.26362 13.6667 7C13.6667 7.73638 13.0698 8.33333 12.3334 8.33333ZM0.333374 12.3333C0.333374 13.0697 0.930328 13.6667 1.66671 13.6667C2.40309 13.6667 3.00004 13.0697 3.00004 12.3333C3.00004 11.597 2.40309 11 1.66671 11C0.930328 11 0.333374 11.597 0.333374 12.3333ZM5.66671 12.3333C5.66671 13.0697 6.26366 13.6667 7.00004 13.6667C7.73642 13.6667 8.33337 13.0697 8.33337 12.3333C8.33337 11.597 7.73642 11 7.00004 11C6.26366 11 5.66671 11.597 5.66671 12.3333ZM11 12.3333C11 13.0697 11.597 13.6667 12.3334 13.6667C13.0698 13.6667 13.6667 13.0697 13.6667 12.3333C13.6667 11.597 13.0698 11 12.3334 11C11.597 11 11 11.597 11 12.3333Z" fill="white"></path></svg>Products</label>
+            <input class="checkbox_products" type="checkbox" name="" id="products_checkbox">
+            <ul class="products-drop">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Home</title><path d="M12 1L2 10.1V23h20V10.1L12 1zm7 19h-5v-6h-4v6H5v-8.6L12 5l7 6.4V20z" fill="currentColor"></path></svg>Home</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Car front</title><path d="M21 9l-1.5-4.6c-.3-.8-1-1.4-1.9-1.4H6.4c-.8 0-1.6.6-1.9 1.4L3 9H1v3h1v9h4v-2h12v2h4v-9h1V9h-2zm-3 7H5v-1h4v-3H5.2l2-6h9.7l2 6H15v3h4v1h-1z" fill="currentColor"></path></svg>Ride</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Steering wheel</title><path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm0 3c3.9 0 7.1 2.8 7.9 6.5h-3.1c-.6-2-2.5-3.5-4.7-3.5S8 8.5 7.4 10.5H4.3C4.9 6.8 8.1 4 12 4zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm-7.9-.5h3.1c.5 1.5 1.7 2.8 3.2 3.2v3.1c-3.1-.6-5.6-3.1-6.3-6.3zm9.4 6.4v-3.1c1.5-.5 2.8-1.7 3.2-3.2h3.1c-.6 3.1-3.1 5.6-6.3 6.3z" fill="currentColor"></path></svg>Drive</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Restaurant</title><g fill="currentColor"><path d="M11 8V1H9v7H7V1H5v7H3V1H1v7c0 2.3 1.5 4.2 3.5 4.8V23h3V12.8c2-.7 3.5-2.6 3.5-4.8z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13 6c0-2.8 2.2-5 5-5s5 2.2 5 5v2c0 2.2-1.5 4.1-3.5 4.7V23h-3V12.7c-2-.6-3.5-2.5-3.5-4.7V6zm5 4c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2s-2 .9-2 2v2c0 1.1.9 2 2 2z"></path></g></svg>Eat</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Wine</title><path fill-rule="evenodd" clip-rule="evenodd" d="M20 3v4.4c1.8.8 3 2.6 3 4.6v11H13V12c0-2.1 1.2-3.8 3-4.6V3h-1V1h6v2h-1zm-4 9v8h4v-8c0-.8-.5-1.5-1.2-1.8l-.8-.3-.8.3c-.7.3-1.2 1-1.2 1.8zM4.5 16.7C2.5 16.1 1 14.2 1 12V7h10v5c0 2.2-1.5 4.1-3.5 4.7V20H10v3H2v-3h2.5v-3.3zM8 10H4v2c0 1.1.9 2 2 2s2-.9 2-2v-2z" fill="currentColor"></path></svg>Restaurants</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Truck</title><path d="M22 10V1H2v9H1v6h2v7h4v-2h10v2h4v-7h2v-6h-1zM6 17h4v-3H6V9h12v5h-4v3h4v1H6v-1zM19 4v2H5V4h14z" fill="currentColor"></path></svg>Freight</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Bike jump</title><path d="M24 5h-6.67l-.83-2H12v3h2.5l1.15 2.76L11.38 13h-.62L7.49 5H3v3h2.5l.43 1.03C5.79 9.02 5.65 9 5.5 9A5.51 5.51 0 000 14.5C0 17.53 2.47 20 5.5 20c2.51 0 4.63-1.7 5.29-4h1.83l.48-.48A5.505 5.505 0 0018.5 20c3.03 0 5.5-2.47 5.5-5.5 0-1.74-.81-3.29-2.08-4.3L24 8.12V5zM5.5 17a2.5 2.5 0 11.002-5.002A2.5 2.5 0 015.5 17zm14.38-9l-.91.91-.39-.91h1.3zm-1.38 9a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" fill="currentColor"></path></svg>Bike & scoot</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Train</title><path d="M21 5s-2.5-4-9-4-9 4-9 4v12.5l2.76 2.76L3.02 23h3.96l3-3h4.04l3 3h3.96l-2.74-2.74L21 17.5V5zm-9-1c3.33 0 5.19 1.32 6 2.09V8H6V6.09C6.81 5.32 8.67 4 12 4zm5.26 13H6.74L6 16.26V11h12v5.26l-.74.74z" fill="currentColor"></path>,<path d="M15 13H9v3h6v-3z" fill="currentColor"></path></svg>Transit</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Briefcase</title><path d="M18 6V1H6v5H1v16h22V6h-5zM9 4h6v2H9V4zm11 15H4V9h16v10z" fill="currentColor"></path></svg>Business</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><title>Money</title><path fill-rule="evenodd" clip-rule="evenodd" d="M1 20V4h22v16H1zm16-6h3V7H7v3H4v7h13v-3zm-2-2a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor"></path></svg>Money</li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="far fa-user fa-fw nav-svg"></i>Log in</a></li>
+          <li class="sign_button">Sign up</li>
         </ul>
-        <div class="sign"><a href="">Sign up</a></div>
-        <input type="checkbox" id="check">
-        <label for="check" class="check_btn"><i class="fas fa-bars"></i></label>
-      </div>
-    </nav>
-  </header>
+      </nav>
+      <nav class="nav2">
+        <div class="nav2-right">
+          <i class="far fa-user fa-fw nav-svg"></i>
+          <div class="sign_button">Sign up</div>
+          <div class="menu-toggle"><label for="menu-toggle"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" color="white"><path d="M2 6h20v3H2V6z" fill="currentColor"></path>,<path d="M2 15h20v3H2v-3z" fill="currentColor"></path></svg></label></div>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <ul class="nav2-menu">
+          <li class="nav2_company"><label for="nav2_company_checkbox">Company <i class="fa-solid fa-angle-down fa-fw"></i></label>
+            <input class="nav2_checkbox_company" type="checkbox" name="" id="nav2_company_checkbox">
+              <ul class="nav2_company-drop">
+                  <li>About Us</li>
+                  <li>Our offerings</li>
+                  <li>How Uber works</li>
+                  <li>Global citizenship</li>
+                  <li>Newsroom</li>
+                  <li>Investor relations</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+              </ul>
+            </li>
+          <li>Safety</li>
+          <li>Help</li>
+          <li>COVID-19 resources</li>
+          <li class="nav2-products"><label for="nav2_products_checkbox"><svg  class="nav-svg" width="28" height="28" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.66671 3C0.930328 3 0.333374 2.40305 0.333374 1.66667C0.333374 0.930286 0.930328 0.333333 1.66671 0.333333C2.40309 0.333333 3.00004 0.930287 3.00004 1.66667C3.00004 2.40305 2.40309 3 1.66671 3ZM7.00004 3C6.26366 3 5.66671 2.40305 5.66671 1.66667C5.66671 0.930287 6.26366 0.333333 7.00004 0.333333C7.73642 0.333333 8.33337 0.930287 8.33337 1.66667C8.33337 2.40305 7.73642 3 7.00004 3ZM12.3334 3C11.597 3 11 2.40305 11 1.66667C11 0.930287 11.597 0.333333 12.3334 0.333333C13.0698 0.333333 13.6667 0.930287 13.6667 1.66667C13.6667 2.40305 13.0698 3 12.3334 3ZM1.66671 8.33333C0.930328 8.33333 0.333374 7.73638 0.333374 7C0.333374 6.26362 0.930328 5.66667 1.66671 5.66667C2.40309 5.66667 3.00004 6.26362 3.00004 7C3.00004 7.73638 2.40309 8.33333 1.66671 8.33333ZM7.00004 8.33333C6.26366 8.33333 5.66671 7.73638 5.66671 7C5.66671 6.26362 6.26366 5.66667 7.00004 5.66667C7.73642 5.66667 8.33337 6.26362 8.33337 7C8.33337 7.73638 7.73642 8.33333 7.00004 8.33333ZM12.3334 8.33333C11.597 8.33333 11 7.73638 11 7C11 6.26362 11.597 5.66667 12.3334 5.66667C13.0698 5.66667 13.6667 6.26362 13.6667 7C13.6667 7.73638 13.0698 8.33333 12.3334 8.33333ZM0.333374 12.3333C0.333374 13.0697 0.930328 13.6667 1.66671 13.6667C2.40309 13.6667 3.00004 13.0697 3.00004 12.3333C3.00004 11.597 2.40309 11 1.66671 11C0.930328 11 0.333374 11.597 0.333374 12.3333ZM5.66671 12.3333C5.66671 13.0697 6.26366 13.6667 7.00004 13.6667C7.73642 13.6667 8.33337 13.0697 8.33337 12.3333C8.33337 11.597 7.73642 11 7.00004 11C6.26366 11 5.66671 11.597 5.66671 12.3333ZM11 12.3333C11 13.0697 11.597 13.6667 12.3334 13.6667C13.0698 13.6667 13.6667 13.0697 13.6667 12.3333C13.6667 11.597 13.0698 11 12.3334 11C11.597 11 11 11.597 11 12.3333Z" fill="black"></path></svg>Products</label>
+            <input class="nav2_checkbox_products" type="checkbox" name="" id="nav2_products_checkbox">
+            <ul class="nav2_products-drop">
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Home</title><path d="M12 1L2 10.1V23h20V10.1L12 1zm7 19h-5v-6h-4v6H5v-8.6L12 5l7 6.4V20z" fill="currentColor"></path></svg>Home</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Car front</title><path d="M21 9l-1.5-4.6c-.3-.8-1-1.4-1.9-1.4H6.4c-.8 0-1.6.6-1.9 1.4L3 9H1v3h1v9h4v-2h12v2h4v-9h1V9h-2zm-3 7H5v-1h4v-3H5.2l2-6h9.7l2 6H15v3h4v1h-1z" fill="currentColor"></path></svg>Ride</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Steering wheel</title><path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm0 3c3.9 0 7.1 2.8 7.9 6.5h-3.1c-.6-2-2.5-3.5-4.7-3.5S8 8.5 7.4 10.5H4.3C4.9 6.8 8.1 4 12 4zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm-7.9-.5h3.1c.5 1.5 1.7 2.8 3.2 3.2v3.1c-3.1-.6-5.6-3.1-6.3-6.3zm9.4 6.4v-3.1c1.5-.5 2.8-1.7 3.2-3.2h3.1c-.6 3.1-3.1 5.6-6.3 6.3z" fill="currentColor"></path></svg>Drive</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Restaurant</title><g fill="currentColor"><path d="M11 8V1H9v7H7V1H5v7H3V1H1v7c0 2.3 1.5 4.2 3.5 4.8V23h3V12.8c2-.7 3.5-2.6 3.5-4.8z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13 6c0-2.8 2.2-5 5-5s5 2.2 5 5v2c0 2.2-1.5 4.1-3.5 4.7V23h-3V12.7c-2-.6-3.5-2.5-3.5-4.7V6zm5 4c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2s-2 .9-2 2v2c0 1.1.9 2 2 2z"></path></g></svg>Eat</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Wine</title><path fill-rule="evenodd" clip-rule="evenodd" d="M20 3v4.4c1.8.8 3 2.6 3 4.6v11H13V12c0-2.1 1.2-3.8 3-4.6V3h-1V1h6v2h-1zm-4 9v8h4v-8c0-.8-.5-1.5-1.2-1.8l-.8-.3-.8.3c-.7.3-1.2 1-1.2 1.8zM4.5 16.7C2.5 16.1 1 14.2 1 12V7h10v5c0 2.2-1.5 4.1-3.5 4.7V20H10v3H2v-3h2.5v-3.3zM8 10H4v2c0 1.1.9 2 2 2s2-.9 2-2v-2z" fill="currentColor"></path></svg>Restaurants</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Truck</title><path d="M22 10V1H2v9H1v6h2v7h4v-2h10v2h4v-7h2v-6h-1zM6 17h4v-3H6V9h12v5h-4v3h4v1H6v-1zM19 4v2H5V4h14z" fill="currentColor"></path></svg>Freight</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Bike jump</title><path d="M24 5h-6.67l-.83-2H12v3h2.5l1.15 2.76L11.38 13h-.62L7.49 5H3v3h2.5l.43 1.03C5.79 9.02 5.65 9 5.5 9A5.51 5.51 0 000 14.5C0 17.53 2.47 20 5.5 20c2.51 0 4.63-1.7 5.29-4h1.83l.48-.48A5.505 5.505 0 0018.5 20c3.03 0 5.5-2.47 5.5-5.5 0-1.74-.81-3.29-2.08-4.3L24 8.12V5zM5.5 17a2.5 2.5 0 11.002-5.002A2.5 2.5 0 015.5 17zm14.38-9l-.91.91-.39-.91h1.3zm-1.38 9a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" fill="currentColor"></path></svg>Bike & scoot</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Train</title><path d="M21 5s-2.5-4-9-4-9 4-9 4v12.5l2.76 2.76L3.02 23h3.96l3-3h4.04l3 3h3.96l-2.74-2.74L21 17.5V5zm-9-1c3.33 0 5.19 1.32 6 2.09V8H6V6.09C6.81 5.32 8.67 4 12 4zm5.26 13H6.74L6 16.26V11h12v5.26l-.74.74z" fill="currentColor"></path>,<path d="M15 13H9v3h6v-3z" fill="currentColor"></path></svg>Transit</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Briefcase</title><path d="M18 6V1H6v5H1v16h22V6h-5zM9 4h6v2H9V4zm11 15H4V9h16v10z" fill="currentColor"></path></svg>Business</li>
+              <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><title>Money</title><path fill-rule="evenodd" clip-rule="evenodd" d="M1 20V4h22v16H1zm16-6h3V7H7v3H4v7h13v-3zm-2-2a3 3 0 11-6 0 3 3 0 016 0z" fill="currentColor"></path></svg>Money</li>
+            </ul>
+          </li>
+          <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5zM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1zm1.9-6.1l-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4zM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12zm3.5 6.6l1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4z" fill="currentColor"></path></svg>
+            EN</li>
+        </ul>
+      </nav>
+
+  </header> 
   <main>
     <section>
        <div class="earner"> 
@@ -79,15 +149,15 @@
             <div class="safety_h2"><h3>Our commitment to your safety</h3></div>
             <div class="safety_p"><p>With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe environment for our users.</p></div>
             <div class="safety_a">
-              <a href="">Read about our Community Guidelines</a>
-              <a href="">See all safety features</a>
+              <a href="" class="a2_hover">Read about our Community Guidelines</a>
+              <a href="" class="a2_hover">See all safety features</a>
             </div>
           </div>
           <div class="container_city">
             <div class="city_img"></div>
             <div class="city_h2"><h3>Setting 10,000+ cities in motion</h3></div>
             <div class="city_p"><p>The app is available in thousands of cities worldwide, so you can request a ride even when you’re far from home.</p></div>
-            <div class="city_a"><a href="">View all cities</a></div>
+            <div class="city_a"><a href="" class="a2_hover">View all cities</a></div>
           </div>
         </div>        
       </div>
